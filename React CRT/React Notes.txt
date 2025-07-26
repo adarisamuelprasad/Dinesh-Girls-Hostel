@@ -1,0 +1,22 @@
+Virtual DOM in React:
+The Virtual DOM is a lightweight , in-memory representation of the actual DOM, implemented as a tree of JavaScript objects.
+
+When a React component's state or props change, React creates a new Virtual DOM tree that reflects the updated UI.
+
+React then compares this new Virtual DOM tree with the previous one. This process identifies the minimal set of changes needed to update the actual DOM.
+
+Only the necessary changes are applied to the actual DOM, a process known as "reconciliation."
+
+This improves performance by reducing the number of direct manipulations to the real DOM and avoiding full-page re-renders.
+
+How Virtual DOM works in React:
+
+Initial Render: React creates a Virtual DOM tree that mirrors the real DOM.
+
+State/Prop Update: A new Virtual DOM tree is created based on the updated state or props.
+
+Diffing: React compares the new and previous Virtual DOM trees to find differences.
+
+Reconciliation: Only the changed elements are updated in the real DOM, minimizing costly operations.
+
+
